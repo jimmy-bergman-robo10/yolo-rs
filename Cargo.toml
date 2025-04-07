@@ -15,7 +15,7 @@ exclude = [".github", "examples", ".envrc", "devenv*"]
 arcstr = "1.2.0"
 image = "0.25.6"
 ndarray = "0.16.1"
-ort = { version = "2.0.0-rc.9", default-features = false }
+ort = { version = "2.0.0-rc.9", default-features = false, features = ["ndarray", "half", "copy-dylibs"] }
 thiserror = "2.0.12"
 
 [workspace]
